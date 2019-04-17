@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://www.independer.nl",
+    "supportFile": "cypress/support/index.ts"
+}

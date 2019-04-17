@@ -1,0 +1,18 @@
+{
+    "name": "cypress-typescript-project",
+    "version": "1.0.0",
+    "description": "Cypress startup project with Typescript enabled",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run --spec cypress/integration/**/*"
+    },
+    "author": "Bjorn van der Neut   ",
+    "license": "ISC",
+    "devDependencies": {
+        "@cypress/browserify-preprocessor": "^2.0.0",
+        "cypress": "^3.2.0",
+        "mocha": "^5.0.4",
+        "tsify": "^4.0.1",
+        "typescript": "^3.3.3333"
+    }
+}
