@@ -1,4 +1,5 @@
 import { ProductGroup } from './../support';
+import {MyOwnClass} from "./Shared/MyOwnClass";
 
 describe('Verify Typescript works fine', () => {
     beforeEach(function () {
@@ -13,9 +14,14 @@ describe('Verify Typescript works fine', () => {
         cy.myCustomFunction('h1', 'Makkelijk zelf kiezen');
     });
 
-    it('check enum', function () {
+    it('Check enum', function () {
         const auto = ProductGroup.Auto;
         cy.log('My enum value is: ' + auto);
+    });
+    
+    it('Use of own class', function(){
+       const myCalculatedValue = MyOwnClass.DoSomeMath(15, 45);
+       cy.log('My calculated value is: ' + myCalculatedValue);
     });
 });
 
