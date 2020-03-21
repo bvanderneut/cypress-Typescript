@@ -9,8 +9,8 @@
     "author": "Bjorn van der Neut   ",
     "license": "ISC",
     "devDependencies": {
-        "@cypress/browserify-preprocessor": "^2.1.1",
-        "cypress": "^3.6.0",
+        "@cypress/browserify-preprocessor": "^2.1.4",
+        "cypress": "^4.2.0",
         "mocha": "^5.0.4",
         "tsify": "^4.0.1",
         "typescript": "^3.3.3333"
