@@ -14,6 +14,8 @@
 // ***********************************************************
 /// <reference types='cypress' />
 
+import '@undefinedlabs/scope-agent/cypress/support';
+
 // Import commands.js using ES2015 syntax:
 import './commands'
 

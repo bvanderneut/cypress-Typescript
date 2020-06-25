@@ -10,19 +10,24 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-const browserify = require('@cypress/browserify-preprocessor');
+const browserify = require("@cypress/browserify-preprocessor");
+const {
+  initCypressPlugin,
+} = require("@undefinedlabs/scope-agent/cypress/plugin");
 
-module.exports = (on, config) => {
+module.exports = async (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 
   const options = {
     browserifyOptions: {
-      extensions: ['.js', '.ts'],
-      plugin: [
-        ['tsify'],
-      ],
+      extensions: [".js", ".ts"],
+      plugin: [["tsify"]],
     },
   };
-  on('file:preprocessor', browserify(options));
-}
+  on("file:preprocessor", browserify(options));
+
+  const newConfig = await initCypressPlugin(on, config);
+
+  return newConfig;
+};
