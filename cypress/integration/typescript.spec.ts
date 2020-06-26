@@ -11,7 +11,7 @@ describe('Verify Typescript works fine', () => {
     });
 
     it('Check custom command', function () {
-        cy.myCustomFunction('h1', 'Makkelijk zelf kiezen');
+        cy.myCustomFunction('body', 'Google');
     });
 
     it('Check enum', function () {
