@@ -2,7 +2,6 @@
     "name": "cypress-typescript-project",
     "version": "1.0.0",
     "description": "Cypress startup project with Typescript enabled",
-    "projectId": "qntpiv",
     "scripts": {
         "cypress:open": "cypress open",
         "cypress:run": "cypress run --spec cypress/integration/**/*"
