@@ -4,7 +4,8 @@
     "description": "Cypress startup project with Typescript enabled",
     "scripts": {
         "cypress:open": "cypress open",
-        "cypress:run": "cypress run --spec cypress/integration/**/*"
+        "cypress:run": "cypress run --spec cypress/integration/**/*",
+        "compile": "tsc --noEmit"
     },
     "author": "Bjorn van der Neut   ",
     "license": "ISC",

@@ -14,4 +14,4 @@ export enum ProductGroup {
     Reis = 'Reis',
     Zorg = 'Zorg',
     HypotheekIQM = 'HypotheekIQM'
-}  
+}
