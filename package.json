@@ -1,23 +1,23 @@
 {
-    "name": "cypress-typescript-project",
-    "version": "1.0.0",
-    "description": "Cypress startup project with Typescript enabled",
-    "scripts": {
-        "cypress:open": "cypress open",
-        "cypress:run": "cypress run --spec cypress/integration/**/*",
-        "compile": "tsc --noEmit"
-    },
-    "author": "Bjorn van der Neut   ",
-    "license": "ISC",
-    "devDependencies": {
-        "@cypress/browserify-preprocessor": "^2.1.4",
-        "@undefinedlabs/scope-agent": "^0.7.3",
-        "cypress": "^4.12.0",
-        "mocha": "^7.0.1",
-        "tsify": "^4.0.1",
-        "typescript": "^3.7.5"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    }
+	"name": "cypress-typescript-project",
+	"version": "1.0.0",
+	"description": "Cypress startup project with Typescript enabled",
+	"scripts": {
+		"cypress:open": "cypress open",
+		"cypress:run": "cypress run --spec cypress/integration/**/*",
+		"compile": "tsc --noEmit"
+	},
+	"author": "Bjorn van der Neut   ",
+	"license": "ISC",
+	"devDependencies": {
+		"@cypress/browserify-preprocessor": "^2.1.4",
+		"@undefinedlabs/scope-agent": "^0.7.3",
+		"cypress": "^6.2.1",
+		"mocha": "^7.0.1",
+		"tsify": "^4.0.1",
+		"typescript": "^3.7.5"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
